@@ -71,7 +71,7 @@ body #page {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 body #page:after {
   content: "";
   display: table;
@@ -88,6 +88,24 @@ body #page:after {
   body #page {
     max-width: 59em;
   }
+}
+
+/* line 1, library/sass/_navigation.scss */
+#site-navigation {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 4, library/sass/_navigation.scss */
+#site-navigation ul.menu {
+  padding-left: 0;
+  list-style: none;
+}
+/* line 8, library/sass/_navigation.scss */
+#site-navigation ul.menu li {
+  position: relative;
+  display: block;
+  float: left;
+  padding: 5px;
 }
 
 /* line 2, library/sass/_modules.scss */

@@ -27,12 +27,10 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'lcarzs' ); ?></h1>
-			<div class="skip-link"><a class="screen-reader-text" href="#content"><?php _e( 'Skip to content', 'lcarzs' ); ?></a></div>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
+		<?php wp_nav_menu( array( 'theme_location' => 'primary',
+															'container' => 'nav',
+															'container_id' => 'site-navigation' ) ); ?>
+		<!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
