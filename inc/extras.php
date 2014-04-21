@@ -68,3 +68,6 @@ function lcarzs_wp_title( $title, $sep ) {
 	return $title;
 }
 add_filter( 'wp_title', 'lcarzs_wp_title', 10, 2 );
+
+echo '<link rel="shortcut icon" href="' . get_bloginfo('stylesheet_directory') . '/library/images/favicon.ico" />';
+
