@@ -30,9 +30,9 @@
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'lcarzs' ); ?></h1>
 			<div class="skip-link"><a class="screen-reader-text" href="#content"><?php _e( 'Skip to content', 'lcarzs' ); ?></a></div>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary',
-                                'container' => 'div',
-                                'container_id' => 'menu' 
-                                )); ?>
+			                          'container'      => 'div',
+			                          'container_id'   => 'menu' 
+			                          )); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

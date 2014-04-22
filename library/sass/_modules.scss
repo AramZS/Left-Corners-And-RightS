@@ -4,7 +4,7 @@ article {
   }
   .hfeed &.hentry {
 	   background:#fff;
-	   margin-bottom:30px;  		
+	   margin-bottom:30px;
        border:1px solid $light-gray;
        @include rounded(10px);
   }
@@ -24,6 +24,6 @@ article {
         margin-top: 0;
         margin-right: -$widget-side-padding;
         margin-left: -$widget-side-padding;
-        @include rounded-header(10px);    
+        @include rounded-header(10px);
     }
 }

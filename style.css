@@ -71,7 +71,7 @@ body #page {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, ../../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 body #page:after {
   content: "";
   display: table;
@@ -96,7 +96,6 @@ body #page:after {
   *zoom: 1;
   height: 38px;
   margin: 0 auto;
-  background-color: #ac1c25;
   width: 100%;
   overflow: hidden;
   font-family: Arial, verdana,Tahoma,Century gothic, sans-serif;
@@ -107,16 +106,20 @@ body #page:after {
   /* for webkit browsers */
   background: -moz-linear-gradient(top, #c41f2a, #91171f);
   /* for firefox 3.6+ */
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
 }
-/* line 15, library/sass/_navigation.scss */
+/* line 16, library/sass/_navigation.scss */
 #site-navigation h1 {
   display: none;
 }
-/* line 19, library/sass/_navigation.scss */
+/* line 20, library/sass/_navigation.scss */
 #site-navigation .skip-link {
   display: none;
 }
-/* line 23, library/sass/_navigation.scss */
+/* line 24, library/sass/_navigation.scss */
 #site-navigation ul.menu {
   padding: 5px 0;
   list-style: none;
@@ -126,20 +129,19 @@ body #page:after {
   border: 0;
   background-color: transparent;
 }
-/* line 33, library/sass/_navigation.scss */
+/* line 34, library/sass/_navigation.scss */
 #site-navigation ul.menu li {
   position: relative;
-  display: block;
+  display: inline;
   float: left;
   padding: 5px;
-  color: white;
+  color: #eeaf14;
   border: 0;
   background-color: transparent;
 }
-/* line 42, library/sass/_navigation.scss */
+/* line 43, library/sass/_navigation.scss */
 #site-navigation ul.menu li:hover {
-  color: #f4878d;
-  background-color: transparent;
+  background-color: #dc7860;
 }
 /* line 47, library/sass/_navigation.scss */
 #site-navigation ul.menu li a {

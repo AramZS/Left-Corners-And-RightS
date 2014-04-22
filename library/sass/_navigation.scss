@@ -3,14 +3,15 @@
 
 	height: 38px;
 	margin: 0 auto;
-	background-color: #ac1c25;
 	width: 100%;
 	overflow: hidden;
 	font-family: Arial, verdana,Tahoma,Century gothic, sans-serif;
 	/**gradient 10 up and down on "B" brightness scale**/
+	// make this a mixin?
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c41f2a', endColorstr='#91171f'); /* for IE */
 	background: -webkit-gradient(linear, left top, left bottom, from(#c41f2a), to(#91171f)); /* for webkit browsers */
 	background: -moz-linear-gradient(top,  #c41f2a,  #91171f); /* for firefox 3.6+ */
+	@include rounded(10px);
 
 	h1 {
 		display: none;
@@ -32,16 +33,15 @@
 
 		li {
 			position: relative;
-			display: block;
+			display: inline;
 			float: left;
 			padding: 5px;
-			color: white;
+			color: $yellow; // should this be left as white?
 			border: 0;
 			background-color: transparent;
 			
 			&:hover {
-				color: #f4878d;
-				background-color: transparent;
+				background-color: $light-red;
 			}
 			
 			a {
