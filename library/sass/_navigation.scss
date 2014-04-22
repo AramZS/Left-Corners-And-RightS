@@ -1,23 +1,58 @@
 #site-navigation {
 	@include clearfix;
-	
+
+	height: 38px;
+	margin: 0 auto;
+	background-color: #ac1c25;
+	width: 100%;
+	overflow: hidden;
+	font-family: Arial, verdana,Tahoma,Century gothic, sans-serif;
+	/**gradient 10 up and down on "B" brightness scale**/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c41f2a', endColorstr='#91171f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#c41f2a), to(#91171f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #c41f2a,  #91171f); /* for firefox 3.6+ */
+
 	h1 {
 		display: none;
 	}
-	
+
 	.skip-link {
 		display: none;
 	}
-	
+
 	ul.menu {
-    padding-left: 0;
-    list-style: none;
-    
+		padding: 5px 0;
+		list-style: none;
+		display: table;
+		text-align: left;
+		margin: auto 0;
+		border: 0;
+		background-color: transparent;
+		
+
 		li {
 			position: relative;
 			display: block;
 			float: left;
 			padding: 5px;
+			color: white;
+			border: 0;
+			background-color: transparent;
+			
+			&:hover {
+				color: #f4878d;
+				background-color: transparent;
+			}
+			
+			a {
+					padding: 12px 16px;
+					margin-right: 6px;
+					text-decoration: none;
+					color: white;
+					border: 0;
+					background-color: transparent;
+					font-weight: bold;
+			}
 		}
 	}
 }
