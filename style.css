@@ -30,6 +30,16 @@ Sizings
 /*********
 TYPOGRAPHY
 *********/
+/* line 44, library/sass/_mixins.scss */
+.hfeed article.hentry h1.entry-title {
+  font-family: 'Nobile', Arial, Helvetica, sans-serif;
+  padding: 0;
+  font-size: 1.75em;
+  margin: 10px 15px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
 /*********
 UTILITIES
 *********/
@@ -104,8 +114,12 @@ body.home article.post.hentry {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
+/* line 10, library/sass/_modules.scss */
+.hfeed article.hentry h1.entry-title {
+  padding: 10px 0px;
+}
 
-/* line 13, library/sass/_modules.scss */
+/* line 17, library/sass/_modules.scss */
 .widget {
   background: #fff;
   -moz-border-radius: 10px;
@@ -119,7 +133,7 @@ body.home article.post.hentry {
   border-top: 0;
   overflow: hidden;
 }
-/* line 22, library/sass/_modules.scss */
+/* line 26, library/sass/_modules.scss */
 .widget .widget-title {
   background: #2791d0;
   margin-top: 0;
