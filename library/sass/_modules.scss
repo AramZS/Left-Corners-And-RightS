@@ -3,22 +3,26 @@ article {
     background-color: white;
   }
   .hfeed &.hentry {
-	   background:#fff;
-	   margin-bottom:30px;  		
+     background:#fff;
+     margin-bottom:30px;      
        border:1px solid $light-gray;
        @include rounded(10px);
+          h1.entry-title {
+  @extend %title-large;
+  padding:10px 0px;
+  }
   }
 }
 
 .widget {
-	background: #fff;
-	@include rounded(10px);
-	border:1px solid $dark-purple;
-	padding: 8px $widget-side-padding;
-	margin: 12px auto;
-	padding-top: 0;
-	border-top: 0;
-	overflow: hidden;
+  background: #fff;
+  @include rounded(10px);
+  border:1px solid $dark-purple;
+  padding: 8px $widget-side-padding;
+  margin: 12px auto;
+  padding-top: 0;
+  border-top: 0;
+  overflow: hidden;
     .widget-title {
         background: $light-blue;
         margin-top: 0;
@@ -27,3 +31,4 @@ article {
         @include rounded-header(10px);    
     }
 }
+
