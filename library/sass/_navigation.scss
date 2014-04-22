@@ -1,6 +1,14 @@
 #site-navigation {
 	@include clearfix;
 	
+	h1 {
+		display: none;
+	}
+	
+	.skip-link {
+		display: none;
+	}
+	
 	ul.menu {
     padding-left: 0;
     list-style: none;

@@ -96,11 +96,19 @@ body #page:after {
   *zoom: 1;
 }
 /* line 4, library/sass/_navigation.scss */
+#site-navigation h1 {
+  display: none;
+}
+/* line 8, library/sass/_navigation.scss */
+#site-navigation .skip-link {
+  display: none;
+}
+/* line 12, library/sass/_navigation.scss */
 #site-navigation ul.menu {
   padding-left: 0;
   list-style: none;
 }
-/* line 8, library/sass/_navigation.scss */
+/* line 16, library/sass/_navigation.scss */
 #site-navigation ul.menu li {
   position: relative;
   display: block;
