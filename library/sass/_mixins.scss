@@ -69,3 +69,10 @@ UTILITIES
 	border-top-right-radius: $radius;
 	border-top-left-radius: $radius;
 }
+
+@mixin gradient($color1, $color2) {
+	/**gradient 10 up and down on "B" brightness scale**/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from($color1), to($color2)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  $color1,  $color2); /* for firefox 3.6+ */
+}

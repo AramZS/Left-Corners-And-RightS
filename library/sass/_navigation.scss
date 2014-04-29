@@ -6,11 +6,7 @@
 	width: 100%;
 	overflow: hidden;
 	font-family: Arial, verdana,Tahoma,Century gothic, sans-serif;
-	/**gradient 10 up and down on "B" brightness scale**/
-	// make this a mixin?
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c41f2a', endColorstr='#91171f'); /* for IE */
-	background: -webkit-gradient(linear, left top, left bottom, from(#c41f2a), to(#91171f)); /* for webkit browsers */
-	background: -moz-linear-gradient(top,  #c41f2a,  #91171f); /* for firefox 3.6+ */
+	@include gradient(#c41f2a, #91171f);
 	@include rounded(10px);
 
 	h1 {
@@ -28,8 +24,7 @@
 		text-align: left;
 		margin: auto 0;
 		border: 0;
-		background-color: transparent;
-		
+		background-color: transparent; 
 
 		li {
 			position: relative;
@@ -38,12 +33,7 @@
 			padding: 5px;
 			color: $yellow; // should this be left as white?
 			border: 0;
-			background-color: transparent;
-			
-			&:hover {
-				background-color: $light-red;
-			}
-			
+
 			a {
 					padding: 12px 16px;
 					margin-right: 6px;
@@ -52,6 +42,10 @@
 					border: 0;
 					background-color: transparent;
 					font-weight: bold;
+
+				&:hover {
+					color: $light-red;
+				}
 			}
 		}
 	}

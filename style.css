@@ -71,7 +71,7 @@ body #page {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 body #page:after {
   content: "";
   display: table;
@@ -100,7 +100,7 @@ body #page:after {
   overflow: hidden;
   font-family: Arial, verdana,Tahoma,Century gothic, sans-serif;
   /**gradient 10 up and down on "B" brightness scale**/
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c41f2a', endColorstr='#91171f');
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2);
   /* for IE */
   background: -webkit-gradient(linear, left top, left bottom, from(#c41f2a), to(#91171f));
   /* for webkit browsers */
@@ -111,15 +111,15 @@ body #page:after {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 16, library/sass/_navigation.scss */
+/* line 12, library/sass/_navigation.scss */
 #site-navigation h1 {
   display: none;
 }
-/* line 20, library/sass/_navigation.scss */
+/* line 16, library/sass/_navigation.scss */
 #site-navigation .skip-link {
   display: none;
 }
-/* line 24, library/sass/_navigation.scss */
+/* line 20, library/sass/_navigation.scss */
 #site-navigation ul.menu {
   padding: 5px 0;
   list-style: none;
@@ -129,7 +129,7 @@ body #page:after {
   border: 0;
   background-color: transparent;
 }
-/* line 34, library/sass/_navigation.scss */
+/* line 29, library/sass/_navigation.scss */
 #site-navigation ul.menu li {
   position: relative;
   display: inline;
@@ -137,13 +137,8 @@ body #page:after {
   padding: 5px;
   color: #eeaf14;
   border: 0;
-  background-color: transparent;
 }
-/* line 43, library/sass/_navigation.scss */
-#site-navigation ul.menu li:hover {
-  background-color: #dc7860;
-}
-/* line 47, library/sass/_navigation.scss */
+/* line 37, library/sass/_navigation.scss */
 #site-navigation ul.menu li a {
   padding: 12px 16px;
   margin-right: 6px;
@@ -152,6 +147,10 @@ body #page:after {
   border: 0;
   background-color: transparent;
   font-weight: bold;
+}
+/* line 46, library/sass/_navigation.scss */
+#site-navigation ul.menu li a:hover {
+  color: #dc7860;
 }
 
 /* line 2, library/sass/_modules.scss */
