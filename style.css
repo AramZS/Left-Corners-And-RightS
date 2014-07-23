@@ -81,7 +81,7 @@ body #page {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 body #page:after {
   content: "";
   display: table;
@@ -118,8 +118,16 @@ body.home article.post.hentry {
 .hfeed article.hentry h1.entry-title {
   padding: 10px 0px;
 }
-
+/* line 14, library/sass/_modules.scss */
+.hfeed article.hentry .entry-content {
+  padding: 10px 15x;
+}
 /* line 17, library/sass/_modules.scss */
+.home .hfeed article.hentry .entry-content {
+  padding-top: 8px;
+}
+
+/* line 23, library/sass/_modules.scss */
 .widget {
   background: #fff;
   -moz-border-radius: 10px;
@@ -133,7 +141,7 @@ body.home article.post.hentry {
   border-top: 0;
   overflow: hidden;
 }
-/* line 26, library/sass/_modules.scss */
+/* line 32, library/sass/_modules.scss */
 .widget .widget-title {
   background: #2791d0;
   margin-top: 0;

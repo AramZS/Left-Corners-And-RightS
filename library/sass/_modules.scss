@@ -11,6 +11,12 @@ article {
                 @extend %title-large;
                 padding:10px 0px;
             }
+      .entry-content {
+          padding:10px 15x;
+      }
+      .home & .entry-content{
+          padding-top:8px;
+      }
   }
 }
 
