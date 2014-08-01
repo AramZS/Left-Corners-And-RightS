@@ -7,6 +7,16 @@ article {
 	   margin-bottom:30px;
        border:1px solid $light-gray;
        @include rounded(10px);
+            h1.entry-title {
+                @extend %title-large;
+                padding:10px 0px;
+            }
+      .entry-content {
+          padding:10px 15x;
+      }
+      .home & .entry-content{
+          padding-top:8px;
+      }
   }
 }
 

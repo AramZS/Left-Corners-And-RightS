@@ -30,6 +30,16 @@ Sizings
 /*********
 TYPOGRAPHY
 *********/
+/* line 44, library/sass/_mixins.scss */
+.hfeed article.hentry h1.entry-title {
+  font-family: 'Nobile', Arial, Helvetica, sans-serif;
+  padding: 0;
+  font-size: 1.75em;
+  margin: 10px 15px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
 /*********
 UTILITIES
 *********/
@@ -71,7 +81,7 @@ body #page {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, ../../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 body #page:after {
   content: "";
   display: table;
@@ -167,8 +177,20 @@ body.home article.post.hentry {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
+/* line 10, library/sass/_modules.scss */
+.hfeed article.hentry h1.entry-title {
+  padding: 10px 0px;
+}
+/* line 14, library/sass/_modules.scss */
+.hfeed article.hentry .entry-content {
+  padding: 10px 15x;
+}
+/* line 17, library/sass/_modules.scss */
+.home .hfeed article.hentry .entry-content {
+  padding-top: 8px;
+}
 
-/* line 13, library/sass/_modules.scss */
+/* line 23, library/sass/_modules.scss */
 .widget {
   background: #fff;
   -moz-border-radius: 10px;
@@ -182,7 +204,7 @@ body.home article.post.hentry {
   border-top: 0;
   overflow: hidden;
 }
-/* line 22, library/sass/_modules.scss */
+/* line 32, library/sass/_modules.scss */
 .widget .widget-title {
   background: #2791d0;
   margin-top: 0;
