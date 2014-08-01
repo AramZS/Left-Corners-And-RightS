@@ -1,0 +1,52 @@
+#site-navigation {
+	@include clearfix;
+
+	height: 38px;
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	font-family: Arial, verdana,Tahoma,Century gothic, sans-serif;
+	@include gradient(#c41f2a, #91171f);
+	@include rounded(10px);
+
+	h1 {
+		display: none;
+	}
+
+	.skip-link {
+		display: none;
+	}
+
+	ul.menu {
+		padding: 5px 0;
+		list-style: none;
+		display: table;
+		text-align: left;
+		margin: auto 0;
+		border: 0;
+		background-color: transparent; 
+
+		li {
+			position: relative;
+			display: inline;
+			float: left;
+			padding: 5px;
+			color: $yellow; // should this be left as white?
+			border: 0;
+
+			a {
+					padding: 12px 16px;
+					margin-right: 6px;
+					text-decoration: none;
+					color: white;
+					border: 0;
+					background-color: transparent;
+					font-weight: bold;
+
+				&:hover {
+					color: $light-red;
+				}
+			}
+		}
+	}
+}

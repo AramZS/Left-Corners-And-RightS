@@ -100,6 +100,69 @@ body #page:after {
   }
 }
 
+/* line 1, library/sass/_navigation.scss */
+#site-navigation {
+  overflow: hidden;
+  *zoom: 1;
+  height: 38px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  font-family: Arial, verdana,Tahoma,Century gothic, sans-serif;
+  /**gradient 10 up and down on "B" brightness scale**/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2);
+  /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#c41f2a), to(#91171f));
+  /* for webkit browsers */
+  background: -moz-linear-gradient(top, #c41f2a, #91171f);
+  /* for firefox 3.6+ */
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 12, library/sass/_navigation.scss */
+#site-navigation h1 {
+  display: none;
+}
+/* line 16, library/sass/_navigation.scss */
+#site-navigation .skip-link {
+  display: none;
+}
+/* line 20, library/sass/_navigation.scss */
+#site-navigation ul.menu {
+  padding: 5px 0;
+  list-style: none;
+  display: table;
+  text-align: left;
+  margin: auto 0;
+  border: 0;
+  background-color: transparent;
+}
+/* line 29, library/sass/_navigation.scss */
+#site-navigation ul.menu li {
+  position: relative;
+  display: inline;
+  float: left;
+  padding: 5px;
+  color: #eeaf14;
+  border: 0;
+}
+/* line 37, library/sass/_navigation.scss */
+#site-navigation ul.menu li a {
+  padding: 12px 16px;
+  margin-right: 6px;
+  text-decoration: none;
+  color: white;
+  border: 0;
+  background-color: transparent;
+  font-weight: bold;
+}
+/* line 46, library/sass/_navigation.scss */
+#site-navigation ul.menu li a:hover {
+  color: #dc7860;
+}
+
 /* line 2, library/sass/_modules.scss */
 body.home article.post.hentry {
   background-color: white;
